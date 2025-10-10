@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirabilary - Venture Creation Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#7c3aed',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-white text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-dark">Mirabilary</h1>
+                        <p class="text-sm text-gray-600">Venture Creation Platform</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#problem" class="text-gray-600 hover:text-primary transition">Problem</a>
+                    <a href="#solution" class="text-gray-600 hover:text-primary transition">Solution</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-primary transition">Pricing</a>
+                    <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-primary text-sm font-medium mb-6">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Orchestrating Trust Between Ideas and Capital
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold text-dark mb-6">
+                    From Idea to 
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Funded Venture</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    The complete platform that protects, validates, and connects early-stage innovation with the right capital.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#solution" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition transform hover:-translate-y-1">
+                        <i class="fas fa-play-circle mr-2"></i>
+                        How It Works
+                    </a>
+                    <a href="#contact" class="border border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">The Broken Innovation Ecosystem</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Current systems fail both founders and investors at the most critical stage</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-user-secret text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3">Idea Theft Risk</h3>
+                    <p class="text-gray-600">Founders risk intellectual property theft when seeking early feedback and funding</p>
+                </div>
+
+                <div class="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-orange-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3">Wasted Time</h3>
+                    <p class="text-gray-600">Investors waste 80% of their time evaluating unvetted, unqualified opportunities</p>
+                </div>
+
+                <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-unlink text-yellow-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3">Network Gaps</h3>
+                    <p class="text-gray-600">Great ideas die due to lack of connections, not lack of quality or potential</p>
+                </div>
+
+                <div class="bg-pink-50 p-6 rounded-xl border-l-4 border-pink-500">
+                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake-slash text-pink-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-3">Equity Conflicts</h3>
+                    <p class="text-gray-600">Founder disputes over equity destroy 65% of early-stage ventures</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-16 bg-gradient-to-r from-primary to-secondary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">The Complete Venture Creation Platform</h2>
+                <p class="text-xl text-blue-100 max-w-2xl mx-auto">Integrated system that transforms how innovation meets capital</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Founders -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-dark">For Founders</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-shield-alt text-green-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Secure IP Protection</h4>
+                                <p class="text-gray-600 text-sm">Blockchain-verified timestamp and protection before sharing</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-chart-line text-blue-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Comprehensive Validation</h4>
+                                <p class="text-gray-600 text-sm">AI + Expert + Community multi-layer assessment</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-handshake text-purple-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Smart Investor Matching</h4>
+                                <p class="text-gray-600 text-sm">Algorithmic connections based on perfect fit</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-percentage text-indigo-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Success-Based Pricing</h4>
+                                <p class="text-gray-600 text-sm">Only 5% of raised capital upon successful funding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investors -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-chart-bar text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-dark">For Investors</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-filter text-green-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Custom Criteria</h4>
+                                <p class="text-gray-600 text-sm">Define precise investment thesis and preferences</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-database text-blue-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Pre-Vetted Pipeline</h4>
+                                <p class="text-gray-600 text-sm">Access validated, qualified opportunities only</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-stopwatch text-purple-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Time Savings</h4>
+                                <p class="text-gray-600 text-sm">80% reduction in due diligence costs and time</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-gem text-indigo-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">Hidden Gems</h4>
+                                <p class="text-gray-600 text-sm">Discover talent outside traditional networks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market & Pricing -->
+    <section id="pricing" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Market Opportunity -->
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-8">Market Opportunity</h2>
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border border-blue-100">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-globe text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-dark">Total Addressable Market</h3>
+                            </div>
+                            <p class="text-2xl font-bold text-primary">$45B</p>
+                            <p class="text-gray-600">Early-stage venture services market</p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-xl border border-green-100">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-bullseye text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-dark">Serviceable Addressable Market</h3>
+                            </div>
+                            <p class="text-2xl font-bold text-green-600">$8B</p>
+                            <p class="text-gray-600">Pre-seed/seed validation and matching</p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-xl border border-orange-100">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-dark">Initial Focus</h3>
+                            </div>
+                            <p class="text-lg font-semibold text-orange-600">Global remote fundraising</p>
+                            <p class="text-gray-600">Algeria as strategic launch market</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing -->
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-8">Business Model</h2>
+                    
+                    <!-- Global Pricing -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-dark mb-4">Global Pricing</h3>
+                        <div class="grid gap-4">
+                            <div class="bg-gray-50 p-4 rounded-lg border">
+                                <h4 class="font-semibold text-dark">Founder Services</h4>
+                                <div class="text-sm text-gray-600 mt-2">
+                                    <p>• Success Fee: 5% of raised capital</p>
+                                    <p>• IP Protection: $19 per idea</p>
+                                    <p>• Premium Validation: $99-$199</p>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg border">
+                                <h4 class="font-semibold text-dark">Investor Services</h4>
+                                <div class="text-sm text-gray-600 mt-2">
+                                    <p>• Basic Access: $200/month</p>
+                                    <p>• Premium Pipeline: $500/month</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Algeria Pricing -->
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 p-6 rounded-xl border-l-4 border-amber-500">
+                        <h3 class="text-xl font-semibold text-dark mb-4 flex items-center">
+                            <i class="fas fa-flag mr-2 text-amber-600"></i>
+                            Algeria-Specific Pricing (1$ = 240 DZD)
+                        </h3>
+                        <p class="text-gray-600 mb-4 text-sm">Localized pricing for market accessibility</p>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">IP Protection:</span>
+                                <span class="font-semibold text-amber-600">700 DZD</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Basic Validation:</span>
+                                <span class="font-semibold text-amber-600">3,500 DZD</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Investor Access:</span>
+                                <span class="font-semibold text-amber-600">7,200 DZD/month</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Capslice Basic:</span>
+                                <span class="font-semibold text-amber-600">10,800 DZD/year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traction & Team -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Traction -->
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-8">Traction & Roadmap</h2>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border mb-8">
+                        <h3 class="text-xl font-semibold text-dark mb-4">Current Status</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 bg-blue-50 rounded-lg">
+                                <div class="text-2xl font-bold text-primary mb-1">250+</div>
+                                <div class="text-sm text-gray-600">Founder Waitlist</div>
+                            </div>
+                            <div class="text-center p-4 bg-green-50 rounded-lg">
+                                <div class="text-2xl font-bold text-green-600 mb-1">15+</div>
+                                <div class="text-sm text-gray-600">Investor Talks</div>
+                            </div>
+                            <div class="text-center p-4 bg-purple-50 rounded-lg">
+                                <div class="text-2xl font-bold text-purple-600 mb-1">3</div>
+                                <div class="text-sm text-gray-600">Incubator Partners</div>
+                            </div>
+                            <div class="text-center p-4 bg-orange-50 rounded-lg">
+                                <div class="text-2xl font-bold text-orange-600 mb-1">MVP</div>
+                                <div class="text-sm text-gray-600">Live</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm border">
+                        <h3 class="text-xl font-semibold text-dark mb-4">Expansion Plan</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4">1</div>
+                                <div>
+                                    <h4 class="font-semibold text-dark">Phase 1: Algeria Launch</h4>
+                                    <p class="text-sm text-gray-600">Months 1-6</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-bold mr-4">2</div>
+                                <div>
+                                    <h4 class="font-semibold text-dark">Phase 2: MENA Expansion</h4>
+                                    <p class="text-sm text-gray-600">Months 7-12</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-4">3</div>
+                                <div>
+                                    <h4 class="font-semibold text-dark">Phase 3: Global Scaling</h4>
+                                    <p class="text-sm text-gray-600">Year 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team -->
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-8">The Team</h2>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border mb-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-dark">Hamza Boukhtam</h3>
+                                <p class="text-primary font-medium">Founder & CEO</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">[Your 1-sentence background highlighting relevant experience]</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm border mb-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user-plus text-gray-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-dark">[Team Member]</h3>
+                                <p class="text-gray-600">Tech Lead</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">[Background and expertise description]</p>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-primary to-secondary p-6 rounded-xl text-white">
+                        <h3 class="text-xl font-semibold mb-3">Advisory Board</h3>
+                        <p class="opacity-90">Venture Capital, Technology, and Legal experts supporting our mission</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-dark text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Ready to Transform Venture Creation?</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">Join us in building the future of innovation funding</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-user text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Hamza Boukhtam</p>
+                                    <p class="text-gray-300">Founder, Mirabilary</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">+213 550 877 577</p>
+                                    <p class="text-gray-300">Available for calls</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">hamza@boukhtam.com</p>
+                                    <p class="text-gray-300">Personal</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">contact@mirabilary.com</p>
+                                    <p class="text-gray-300">Business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Send us a Message</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-primary">
+                            </div>
+                            <div>
+                                <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-primary"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark border-t border-white/10 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">© 2024 Mirabilary. Orchestrating Trust Between Ideas and Capital.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
